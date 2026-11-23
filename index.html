@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio | AmazonasTours S.A.S.</title>
+    
+  <!-- Vista previa para Facebook y WhatsApp -->
+  <meta property="og:title" content="AmazonasTours S.A.S. | Transporte Turístico y Ejecutivo">
+  <meta property="og:description" content="Viaja con elegancia y seguridad por Puyo, Macas, Tena y todo el Ecuador. Flota moderna y atención personalizada.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vercel.app">
+
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -24,17 +31,135 @@
     </nav>
   </header>
 
-  <main class="contenedor" style="text-align: center; padding: 4rem 1rem;">
-    <h1 style="font-size: 2.8rem; color: var(--dorado); margin-bottom: 1rem;">
-      Viaja con Elegancia y Seguridad por la Amazonía
-    </h1>
-    <p style="color: var(--texto-gris); max-width: 650px; margin: 0 auto 2rem auto; font-size: 1.1rem;">
-      Transporte turístico, ejecutivo y grupal en Puyo, Macas, Tena y todo el Ecuador.
-    </p>
-    <a href="contacto.html" class="btn">Cotizar mi Viaje Ahora</a>
-  </main>
 
+  <!-- Portada Principal (Hero) -->
+  <section class="hero">
+    <span class="badge-dorado">Operadora Autorizada • Puyo • Macas • Tena</span>
+    <h1>La Amazonía en tus manos, <span>te conectamos con tu destino</span></h1>
+    <p>
+      Transporte turístico, ejecutivos puerta a puerta y excursiones grupales con unidades modernas, conductores certificados y respaldo legal en todo el Ecuador.
+    </p>
+    <div class="hero-botones">
+      <a href="contacto.html" class="btn">Cotizar mi Viaje</a>
+      <a href="flota.html" class="btn-secundario">Conocer la Flota</a>
+    </div>
+  </section>
+
+  <!-- Sección 1: Una solución para cada necesidad (Estilo moderno por perfiles) -->
+  <section class="contenedor">
+    <h2 class="titulo-seccion">Una solución para cada tipo de viaje</h2>
+    <div class="grid-tarjetas">
+      <div class="tarjeta">
+        <h3>Viaja y Explora</h3>
+        <p style="color: var(--texto-gris); margin-bottom: 1.5rem;">
+          Muévete seguro y cómodo hacia los mejores destinos turísticos de la Amazonía, Baños y Quito con rutas personalizadas.
+        </p>
+        <a href="rutas.html" class="btn-secundario">Ver Rutas</a>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Servicio Corporativo</h3>
+        <p style="color: var(--texto-gris); margin-bottom: 1.5rem;">
+          Gestiona los traslados ejecutivos, eventos y delegaciones de tu empresa con puntualidad, facturación y unidades de lujo.
+        </p>
+        <a href="servicios.html" class="btn-secundario">Soluciones Empresas</a>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Afilia tu Vehículo</h3>
+        <p style="color: var(--texto-gris); margin-bottom: 1.5rem;">
+          ¿Tienes un Sedán o Buseta? Únete a nuestra red operativa en Puyo, Macas o Tena y genera ingresos respaldados.
+        </p>
+        <a href="invierte.html" class="btn-secundario">Quiero Invertir</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 2: Pestañas Interactivas de Ventajas Rápidas -->
+  <section class="contenedor">
+    <h2 class="titulo-seccion">¿Por qué elegir AmazonasTours?</h2>
+    
+    <div class="tabs-botones">
+      <button class="tab-btn activo" data-target="ventaja-seguridad">Seguridad y Legalidad</button>
+      <button class="tab-btn" data-target="ventaja-flota">Flota Moderna</button>
+      <button class="tab-btn" data-target="ventaja-atencion">Atención 24/7</button>
+    </div>
+
+    <div id="ventaja-seguridad" class="tab-contenido activo">
+      <div class="tarjeta" style="text-align: center; max-width: 750px; margin: 0 auto;">
+        <h3>Permisos ANT y Ministerio de Turismo al día</h3>
+        <p style="color: var(--texto-gris);">
+          Todas nuestras unidades cuentan con rastreo satelital GPS, pólizas de seguro para pasajeros y conductores profesionales con amplia experiencia en carreteras amazónicas y andinas.
+        </p>
+      </div>
+    </div>
+
+    <div id="ventaja-flota" class="tab-contenido">
+      <div class="tarjeta" style="text-align: center; max-width: 750px; margin: 0 auto;">
+        <h3>Sedán Ejecutivo (4 pas.) y Busetas (22 pas.)</h3>
+        <p style="color: var(--texto-gris);">
+          Vehículos climatizados, asientos ergonómicos reclinables y mantenimiento preventivo riguroso para que disfrutes cada kilómetro sin preocupaciones.
+        </p>
+      </div>
+    </div>
+
+    <div id="ventaja-atencion" class="tab-contenido">
+      <div class="tarjeta" style="text-align: center; max-width: 750px; margin: 0 auto;">
+        <h3>Coordinación inmediata por WhatsApp</h3>
+        <p style="color: var(--texto-gris);">
+          Cotizaciones rápidas, reservas programadas para vuelos en Quito/Guayaquil y asistencia directa durante todo tu recorrido.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de Página Completo -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo">AT <span>AmazonasTours</span></a>
+        <p style="color: var(--texto-gris); font-size: 0.9rem; margin-top: 0.8rem;">
+          Transporte turístico y ejecutivo de alto nivel en la Región Amazónica del Ecuador.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="flota.html">Nuestra Flota</a></li>
+          <li><a href="rutas.html">Rutas y Destinos</a></li>
+          <li><a href="invierte.html">Únete / Invierte</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sedes Operativas</h4>
+        <ul>
+          <li><a href="contacto.html">Puyo, Pastaza</a></li>
+          <li><a href="contacto.html">Macas, Morona Santiago</a></li>
+          <li><a href="contacto.html">Tena, Napo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa y Legal</h4>
+        <ul>
+          <li><a href="nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="legales.html">Términos y Condiciones</a></li>
+          <li><a href="legales.html">Política de Privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      © 2026 AmazonasTours S.A.S. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
   <a href="#" id="btn-whatsapp" class="whatsapp-float" target="_blank">WhatsApp Directo</a>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
